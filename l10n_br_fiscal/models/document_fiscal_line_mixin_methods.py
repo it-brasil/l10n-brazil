@@ -162,9 +162,14 @@ class FiscalDocumentLineMixinMethods(models.AbstractModel):
             rm_to_amount = sum([record[r] for r in record._rm_fields_to_amount()])
 
             # Valor do documento (NF)
-            record.amount_total = (
-                record.amount_untaxed + record.amount_tax + add_to_amount - rm_to_amount
+            record.amount_untaxed_total = (
+                record.amount_untaxed + add_to_amount - rm_to_amount
             )
+
+            # Valor do documento (NF)
+            record.amount_total = record.amount_untaxed_total + record.amount_tax
+
+
 
             # Valor Liquido (TOTAL + IMPOSTOS - RETENÇÕES)
             record.amount_taxed = record.amount_total - record.amount_tax_withholding
