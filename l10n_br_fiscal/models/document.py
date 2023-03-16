@@ -57,6 +57,15 @@ class Document(models.Model):
 
     # used mostly to enable _inherits of account.invoice on
     # fiscal_document when existing invoices have no fiscal document.
+
+    # @api.model
+    # def _fiscal_line_domain(self):
+    #     # import pudb;pu.db
+    #     domain = [()]
+    #     if not self.active:
+    #         domain = [('name', '=', 'dummy'), ('id', '<', '150')]
+    #     return domain
+
     active = fields.Boolean(
         default=True,
     )
@@ -160,6 +169,8 @@ class Document(models.Model):
         inverse_name="document_id",
         string="Document Lines",
         copy=True,
+        # domain=lambda self: self._fiscal_line_domain(),
+        limit = 20,
         check_company=True,
     )
 

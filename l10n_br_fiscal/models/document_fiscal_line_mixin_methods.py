@@ -145,41 +145,31 @@ class FiscalDocumentLineMixinMethods(models.AbstractModel):
     )
     def _compute_amounts(self):
         for record in self:
-            print (f" __________aaaaaaaaaaaaa__________ {str(record._name)}-{str(record.id)}")
             round_curr = record.currency_id or self.env.ref("base.BRL")
             # Valor dos produtos
             record.price_gross = round_curr.round(record.price_unit * record.quantity)
-            print (f"price_gross {str(record.price_gross)}")
 
             record.amount_untaxed = record.price_gross - record.discount_value
-            print (f"amount_untaxed {str(record.amount_untaxed)}")
 
             record.amount_fiscal = (
                 round_curr.round(record.fiscal_price * record.fiscal_quantity)
                 - record.discount_value
             )
-            print (f"amount_fiscal {str(record.amount_fiscal)}")
 
             record.amount_tax = record.amount_tax_not_included
-            print (f"amount_tax {str(record.amount_tax)}")
 
             add_to_amount = sum([record[a] for a in record._add_fields_to_amount()])
             rm_to_amount = sum([record[r] for r in record._rm_fields_to_amount()])
-            print (f"add_to_amount {str(add_to_amount)}")
-            print (f"rm_to_amount {str(rm_to_amount)}")
 
             # Valor do documento (NF)
             record.amount_untaxed_total = (
                 record.amount_untaxed + add_to_amount - rm_to_amount
             )
-            print (f"amount_untaxed_total {str(record.amount_untaxed_total)}")
-            # Valor do documento (NF)
+
             record.amount_total = record.amount_untaxed_total + record.amount_tax
-            print (f"amount_total {str(record.amount_total)}")
 
             # Valor Liquido (TOTAL + IMPOSTOS - RETENÇÕES)
             record.amount_taxed = record.amount_total - record.amount_tax_withholding
-            print (f"amount_taxed {str(record.amount_taxed)}")
 
             # Valor financeiro
             if (
@@ -191,12 +181,10 @@ class FiscalDocumentLineMixinMethods(models.AbstractModel):
                 record.financial_total_gross = (
                     record.financial_total + record.discount_value
                 )
-                print (f"financial_total_gross {str(record.financial_total_gross)}")
                 record.financial_discount_value = record.discount_value
             else:
                 record.financial_total_gross = record.financial_total = 0.0
                 record.financial_discount_value = 0.0
-                print (f"financial_total_gross xx {str(record.financial_total_gross)}")
 
     def _compute_taxes(self, taxes, cst=None):
         self.ensure_one()
