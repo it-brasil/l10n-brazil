@@ -160,6 +160,9 @@ class StockPicking(models.Model):
                 fiscal_operation = record._get_default_fiscal_operation()
                 if fiscal_operation:
                     record.fiscal_operation_id = fiscal_operation
+                    for line in record.move_lines:
+                        line.fiscal_operation_id = fiscal_operation
+                        line._onchange_product_id_fiscal()
 
     def set_to_be_invoiced(self):
         """
