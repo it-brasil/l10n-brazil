@@ -1,0 +1,24 @@
+{
+  "pull_requests": {
+    "OCA/l10n-brazil#2888": "done in #3338",
+    "OCA/l10n-brazil#3000": "done in #3039",
+    "OCA/l10n-brazil#3005": "part of the v16 l10n_br_account migr in #2865",
+    "OCA/l10n-brazil#2761": "done in #3054",
+    "OCA/l10n-brazil#3032": "done in #3053",
+    "OCA/l10n-brazil#3030": "done in #3063",
+    "OCA/l10n-brazil#3064": "part of the l10n_br_account v16 migr in #2865",
+    "OCA/l10n-brazil#3037": "part of the l10n_br_account v16 migr in #2865",
+    "OCA/l10n-brazil#3016": "part of the l10n_br_account v16 migr in #2865",
+    "OCA/l10n-brazil#3093": "done in #3197",
+    "OCA/l10n-brazil#3109": "done in #3202",
+    "OCA/l10n-brazil#3264": "done in #3277",
+    "OCA/l10n-brazil#3307": "done in #3311",
+    "OCA/l10n-brazil#3309": "done in #3311",
+    "OCA/l10n-brazil#3012": "done in #3329",
+    "OCA/l10n-brazil#3346": "module renumbering not needed in 16.0",
+    "OCA/l10n-brazil#3332": "done in #3356",
+    "OCA/l10n-brazil#3364": "done in #3378",
+    "OCA/l10n-brazil#3345": "part of the 16.0 dotfiles already",
+    "OCA/l10n-brazil#3447": "not needed in 16.0 (cleaner)"
+  }
+}
