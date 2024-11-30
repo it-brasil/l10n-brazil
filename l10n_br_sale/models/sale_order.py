@@ -269,3 +269,12 @@ class SaleOrder(models.Model):
             partner = self.partner_invoice_id
 
         return partner
+
+    @api.onchange("partner_id")
+    def _onchange_partner_id_fiscal(self):
+        if self.partner_id:
+            # Necessário chamar o onchange para preencher o partner_invoice_id
+            # antes do Mix Fiscal e ter o ind_final correto
+            # TODO: teria outra forma com menos código?
+            self.onchange_partner_id()
+            return super()._onchange_partner_id_fiscal()
