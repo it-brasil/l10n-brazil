@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-05 07:08+0000\n"
-"PO-Revision-Date: 2024-08-28 19:06+0000\n"
+"PO-Revision-Date: 2024-12-02 18:06+0000\n"
 "Last-Translator: Marcel Savegnago <marcel.savegnago@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -446,12 +446,12 @@ msgstr "Nome Exibido"
 #. module: l10n_br_stock_account
 #: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_picking__key_check_digit
 msgid "Document Key Check Digit"
-msgstr ""
+msgstr "Dígito de Verificação da Chave do Documento"
 
 #. module: l10n_br_stock_account
 #: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_picking__key_random_code
 msgid "Document Key Random Code"
-msgstr ""
+msgstr "Código Aleatório da Chave do Documento"
 
 #. module: l10n_br_stock_account
 #: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_picking__document_number
