@@ -136,8 +136,8 @@ class AccountPaymentLine(models.Model):
         default="0",
     )
 
-    mov_instruction_code_id = fields.Many2one(
-        comodel_name="l10n_br_cnab.mov.instruction.code",
+    instruction_move_code_id = fields.Many2one(
+        comodel_name="l10n_br_cnab.code",
         string="Código da Instrução para Movimento",
         help="Campo G061 do CNAB",
     )
@@ -276,5 +276,5 @@ class AccountPaymentLine(models.Model):
             # ex.: UNICRED 240/400 é 01 - Remessa*, 02 - Pedido de Baixa e
             # 06 - Alteração de vencimento . Veja que está sendo informado
             # o campo Code do objeto.
-            "identificacao_ocorrencia": self.mov_instruction_code_id.code,
+            "identificacao_ocorrencia": self.instruction_move_code_id.code,
         }
