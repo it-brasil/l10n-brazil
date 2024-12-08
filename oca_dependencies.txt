@@ -1,4 +1,0 @@
-web
-account-payment
-account-reconcile
-odoo-test-helper
