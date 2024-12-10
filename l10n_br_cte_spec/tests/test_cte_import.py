@@ -6,13 +6,12 @@ from datetime import datetime
 
 import nfelib
 import pkg_resources
-from nfelib.cte.bindings.v4_0.cte_v4_00 import Cte
-from xsdata.formats.dataclass.parsers import XmlParser
+from nfelib.cte.bindings.v4_0.cte_v4_00 import Tcte
 
 from odoo import api
 from odoo.tests import TransactionCase
 
-from ..models import spec_models
+from ..models import spec_mixin
 
 tz_datetime = re.compile(r".*[-+]0[0-9]:00$")
 
@@ -67,6 +66,9 @@ def build_attrs_fake(self, node, create_m2o=False):
                 key = fields[key]["related"][0]
                 comodel_name = fields[key]["relation"]
                 comodel = self.env.get(comodel_name)
+            elif fields.get(key) and fields[key].get("relation"):
+                comodel_name = fields[key]["relation"]
+                comodel = self.env.get(comodel_name)
             else:
                 comodel = None
                 for name in self.env.keys():
@@ -116,10 +118,10 @@ def match_or_create_m2o_fake(self, comodel, new_value, create_m2o=False):
     return comodel.new(new_value).id
 
 
-# spec_models.CteSpecMixin._update_cache = _update_cache
-spec_models.CteSpecMixin.build_fake = build_fake
-spec_models.CteSpecMixin.build_attrs_fake = build_attrs_fake
-spec_models.CteSpecMixin.match_or_create_m2o_fake = match_or_create_m2o_fake
+# spec_mixin.CteSpecMixin._update_cache = _update_cache
+spec_mixin.CteSpecMixin.build_fake = build_fake
+spec_mixin.CteSpecMixin.build_attrs_fake = build_attrs_fake
+spec_mixin.CteSpecMixin.match_or_create_m2o_fake = match_or_create_m2o_fake
 
 
 class CTeImportTest(TransactionCase):
@@ -131,8 +133,26 @@ class CTeImportTest(TransactionCase):
             "43120178408960000182570010000000041000000047-cte.xml",
         )
         resource_path = "/".join(res_items)
-        nfe_stream = pkg_resources.resource_stream(nfelib.__name__, resource_path)
-        parser = XmlParser()
-        binding = parser.from_string(nfe_stream.read().decode(), Cte)
-        cte = self.env["cte.40.tcte"].build_fake(binding, create=False)
-        self.assertEqual(cte.cte40_infCte.cte40_emit.cte40_CNPJ, "78408960000182")
+        cte_stream = pkg_resources.resource_stream(nfelib.__name__, resource_path)
+        binding = Tcte.from_xml(cte_stream.read().decode())
+        cte = (
+            self.env["cte.40.tcte_infcte"]
+            .with_context(tracking_disable=True, edoc_type="in", lang="pt_BR")
+            .build_fake(binding.infCte, create=False)
+        )
+        self.assertEqual(cte.cte40_emit.cte40_xNome, "KERBER E CIA. LTDA.")
+
+        self.assertEqual(cte.cte40_ide.cte40_cCT, "00000004")
+        self.assertEqual(
+            cte.cte40_Id, "CTe43120178408960000182570010000000041000000047"
+        )
+
+        self.assertEqual(cte.cte40_emit.cte40_CNPJ, "78408960000182")
+        self.assertEqual(cte.cte40_receb.cte40_CNPJ, "81639791000104")
+
+        self.assertEqual(cte.cte40_exped.cte40_CNPJ, "78408960000182")
+        self.assertEqual(cte.cte40_dest.cte40_CNPJ, "81639791000104")
+
+        self.assertEqual(
+            cte.cte40_infCTeNorm.cte40_infCarga.cte40_proPred, "Pedra Brita"
+        )
