@@ -131,6 +131,11 @@ msgid "COFINS ST CST Code"
 msgstr ""
 
 #. module: l10n_br_account
+#: model:ir.actions.act_window,name:l10n_br_account.fiscal_invoice_cte_action
+msgid "CT-e"
+msgstr ""
+
+#. module: l10n_br_account
 #: code:addons/l10n_br_account/models/document.py:0
 #, python-format
 msgid "Canceled due to the denial of document %(document_number)s"
@@ -256,6 +261,11 @@ msgstr ""
 #. module: l10n_br_account
 #: model:ir.model.fields,field_description:l10n_br_account.field_account_move__partner_ind_ie_dest
 msgid "Contribuinte do ICMS"
+msgstr ""
+
+#. module: l10n_br_account
+#: model_terms:ir.actions.act_window,help:l10n_br_account.fiscal_invoice_cte_action
+msgid "Create a new CT-e"
 msgstr ""
 
 #. module: l10n_br_account
@@ -707,6 +717,7 @@ msgstr ""
 
 #. module: l10n_br_account
 #: model_terms:ir.actions.act_window,help:l10n_br_account.fiscal_invoice_all_action
+#: model_terms:ir.actions.act_window,help:l10n_br_account.fiscal_invoice_cte_action
 #: model_terms:ir.actions.act_window,help:l10n_br_account.fiscal_invoice_in_action
 #: model_terms:ir.actions.act_window,help:l10n_br_account.fiscal_invoice_nfe_action
 #: model_terms:ir.actions.act_window,help:l10n_br_account.fiscal_invoice_nfse_action
