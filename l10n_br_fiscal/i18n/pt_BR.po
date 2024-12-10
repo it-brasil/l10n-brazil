@@ -857,6 +857,15 @@ msgid "Activity Type Icon"
 msgstr "Ícone do Tipo de Atividade"
 
 #. module: l10n_br_fiscal
+#: model:ir.model.fields,help:l10n_br_fiscal.field_l10n_br_fiscal_document__partner_receivering_id
+#: model:ir.model.fields,help:l10n_br_fiscal.field_l10n_br_fiscal_document_mixin__partner_receivering_id
+#: model:ir.model.fields,help:l10n_br_fiscal.field_l10n_br_fiscal_document_mixin_fields__partner_receivering_id
+msgid ""
+"Actor who receives the goods. He is considered an intermediary             "
+"between the issuer and the final recipient."
+msgstr ""
+
+#. module: l10n_br_fiscal
 #: model_terms:ir.actions.act_window,help:l10n_br_fiscal.cest_action
 msgid "Add a new CEST"
 msgstr "Adicionar um novo CEST"
@@ -875,6 +884,11 @@ msgstr "Adicionar um novo CNAE"
 #: model_terms:ir.actions.act_window,help:l10n_br_fiscal.cst_action
 msgid "Add a new CST"
 msgstr "Adicionar um novo CST"
+
+#. module: l10n_br_fiscal
+#: model_terms:ir.actions.act_window,help:l10n_br_fiscal.cte_document_action
+msgid "Add a new CTe"
+msgstr ""
 
 #. module: l10n_br_fiscal
 #: model_terms:ir.actions.act_window,help:l10n_br_fiscal.document_type_action
@@ -1259,6 +1273,11 @@ msgid "Approved"
 msgstr "Aprovado"
 
 #. module: l10n_br_fiscal
+#: model:ir.model.fields.selection,name:l10n_br_fiscal.selection__l10n_br_fiscal_document__transport_modal__03
+msgid "Aquaviário"
+msgstr ""
+
+#. module: l10n_br_fiscal
 #: model:ir.model.fields.selection,name:l10n_br_fiscal.selection__res_company__profit_calculation__arbitrary
 msgid "Arbitrary"
 msgstr "Arbitrário"
@@ -1327,6 +1346,11 @@ msgstr "Autorizada"
 #: model_terms:ir.ui.view,arch_db:l10n_br_fiscal.operation_dashboard_kanban
 msgid "Autorizados"
 msgstr "Autorizados"
+
+#. module: l10n_br_fiscal
+#: model:ir.model.fields.selection,name:l10n_br_fiscal.selection__l10n_br_fiscal_document__transport_modal__02
+msgid "Aéreo"
+msgstr ""
 
 #. module: l10n_br_fiscal
 #: model:uom.uom,name:l10n_br_fiscal.UOM_BALDE
@@ -1920,7 +1944,9 @@ msgid "CSTs"
 msgstr "CSTs"
 
 #. module: l10n_br_fiscal
+#: model:ir.actions.act_window,name:l10n_br_fiscal.cte_document_action
 #: model:ir.model.fields,field_description:l10n_br_fiscal.field_res_config_settings__module_l10n_br_cte
+#: model:ir.ui.menu,name:l10n_br_fiscal.document_cte_menu
 msgid "CT-e"
 msgstr "CT-e"
 
@@ -2742,6 +2768,11 @@ msgid "Destination"
 msgstr "Destino"
 
 #. module: l10n_br_fiscal
+#: model:ir.model.fields.selection,name:l10n_br_fiscal.selection__l10n_br_fiscal_document__service_provider__3
+msgid "Destinatário"
+msgstr ""
+
+#. module: l10n_br_fiscal
 #: model:ir.model.fields.selection,name:l10n_br_fiscal.selection__l10n_br_fiscal_document__edoc_purpose__4
 #: model:ir.model.fields.selection,name:l10n_br_fiscal.selection__l10n_br_fiscal_operation__edoc_purpose__4
 msgid "Devolução de mercadoria"
@@ -2979,6 +3010,11 @@ msgid "Due Day"
 msgstr "Data de Vencimento"
 
 #. module: l10n_br_fiscal
+#: model:ir.model.fields.selection,name:l10n_br_fiscal.selection__l10n_br_fiscal_document__transport_modal__05
+msgid "Dutoviário"
+msgstr ""
+
+#. module: l10n_br_fiscal
 #: model:uom.uom,name:l10n_br_fiscal.UOM_EMBALAGEM
 msgid "EMBALAGEM"
 msgstr "EMBALAGEM"
@@ -3136,6 +3172,11 @@ msgid "Exigível"
 msgstr "Exigível"
 
 #. module: l10n_br_fiscal
+#: model:ir.model.fields.selection,name:l10n_br_fiscal.selection__l10n_br_fiscal_document__service_provider__1
+msgid "Expedidor"
+msgstr ""
+
+#. module: l10n_br_fiscal
 #: model:ir.model.fields.selection,name:l10n_br_fiscal.selection__l10n_br_fiscal_operation__state__expired
 #: model:ir.model.fields.selection,name:l10n_br_fiscal.selection__l10n_br_fiscal_operation_line__state__expired
 #: model:ir.model.fields.selection,name:l10n_br_fiscal.selection__l10n_br_fiscal_tax_definition__state__expired
@@ -3237,6 +3278,11 @@ msgstr "Federal"
 #: model:ir.model.fields.selection,name:l10n_br_fiscal.selection__l10n_br_fiscal_cest__segment__08
 msgid "Ferramentas"
 msgstr "Ferramentas"
+
+#. module: l10n_br_fiscal
+#: model:ir.model.fields.selection,name:l10n_br_fiscal.selection__l10n_br_fiscal_document__transport_modal__04
+msgid "Ferroviário"
+msgstr ""
 
 #. module: l10n_br_fiscal
 #: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_document__ind_final
@@ -3819,6 +3865,11 @@ msgstr "Agrupar por"
 #: model_terms:ir.ui.view,arch_db:l10n_br_fiscal.tax_search
 msgid "Group By..."
 msgstr "Agrupar Por..."
+
+#. module: l10n_br_fiscal
+#: model_terms:ir.actions.act_window,help:l10n_br_fiscal.cte_document_action
+msgid "Here you can create CT-es"
+msgstr ""
 
 #. module: l10n_br_fiscal
 #: model_terms:ir.actions.act_window,help:l10n_br_fiscal.nfe_document_action
@@ -5639,6 +5690,13 @@ msgid "Inscr. Estadual/RG"
 msgstr "O Inscr. Estadual/RG"
 
 #. module: l10n_br_fiscal
+#: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_document__partner_insurance_id
+#: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_document_mixin__partner_insurance_id
+#: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_document_mixin_fields__partner_insurance_id
+msgid "Insurance Partner"
+msgstr ""
+
+#. module: l10n_br_fiscal
 #: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_document__amount_insurance_value
 #: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_document_line__insurance_value
 #: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_document_line_mixin__insurance_value
@@ -6301,6 +6359,11 @@ msgid "Messages"
 msgstr "Mensagens"
 
 #. module: l10n_br_fiscal
+#: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_document__transport_modal
+msgid "Modal de Transporte"
+msgstr ""
+
+#. module: l10n_br_fiscal
 #: model_terms:ir.ui.view,arch_db:l10n_br_fiscal.document_search
 msgid "Month"
 msgstr "Mês"
@@ -6314,6 +6377,11 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:l10n_br_fiscal.cfop_form
 msgid "Move Settings"
 msgstr "Configurações de movimento"
+
+#. module: l10n_br_fiscal
+#: model:ir.model.fields.selection,name:l10n_br_fiscal.selection__l10n_br_fiscal_document__transport_modal__06
+msgid "Multimodal"
+msgstr ""
 
 #. module: l10n_br_fiscal
 #: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_document__partner_inscr_mun
@@ -7016,6 +7084,7 @@ msgid "Outras"
 msgstr ""
 
 #. module: l10n_br_fiscal
+#: model:ir.model.fields.selection,name:l10n_br_fiscal.selection__l10n_br_fiscal_document__service_provider__4
 #: model:ir.model.fields.selection,name:l10n_br_fiscal.selection__l10n_br_fiscal_tax_group__tax_domain__others
 #: model:ir.model.fields.selection,name:l10n_br_fiscal.selection__l10n_br_fiscal_tax_ipi_guideline__cst_group__outros
 msgid "Outros"
@@ -7965,6 +8034,18 @@ msgid "Real"
 msgstr "Real"
 
 #. module: l10n_br_fiscal
+#: model:ir.model.fields.selection,name:l10n_br_fiscal.selection__l10n_br_fiscal_document__service_provider__2
+msgid "Recebedor"
+msgstr ""
+
+#. module: l10n_br_fiscal
+#: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_document__partner_receivering_id
+#: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_document_mixin__partner_receivering_id
+#: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_document_mixin_fields__partner_receivering_id
+msgid "Receiver Address"
+msgstr ""
+
+#. module: l10n_br_fiscal
 #: model:ir.model.fields.selection,name:l10n_br_fiscal.selection__l10n_br_fiscal_tax_ipi_guideline__cst_group__reducao
 msgid "Redução"
 msgstr "Redução"
@@ -8047,6 +8128,11 @@ msgid "Related operation"
 msgstr "Operação relacionada"
 
 #. module: l10n_br_fiscal
+#: model:ir.model.fields.selection,name:l10n_br_fiscal.selection__l10n_br_fiscal_document__service_provider__0
+msgid "Remetente"
+msgstr ""
+
+#. module: l10n_br_fiscal
 #: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_tax_group__base_without_icms
 msgid "Remove ICMS value from Base"
 msgstr ""
@@ -8068,6 +8154,13 @@ msgstr "Voltar para Provisório"
 #: model:ir.model.fields,field_description:l10n_br_fiscal.field_uom_uom__activity_user_id
 msgid "Responsible User"
 msgstr "Usuário Responsável"
+
+#. module: l10n_br_fiscal
+#: model:ir.model.fields,help:l10n_br_fiscal.field_l10n_br_fiscal_document__partner_sendering_id
+#: model:ir.model.fields,help:l10n_br_fiscal.field_l10n_br_fiscal_document_mixin__partner_sendering_id
+#: model:ir.model.fields,help:l10n_br_fiscal.field_l10n_br_fiscal_document_mixin_fields__partner_sendering_id
+msgid "Responsible for sending the goods, usually the issuer of the NFe."
+msgstr ""
 
 #. module: l10n_br_fiscal
 #: model_terms:ir.ui.view,arch_db:l10n_br_fiscal.document_fiscal_line_mixin_form
@@ -8105,6 +8198,11 @@ msgstr "Devolução"
 #: model_terms:ir.ui.view,arch_db:l10n_br_fiscal.tax_definition_form
 msgid "Review"
 msgstr "Revisar"
+
+#. module: l10n_br_fiscal
+#: model:ir.model.fields.selection,name:l10n_br_fiscal.selection__l10n_br_fiscal_document__transport_modal__01
+msgid "Rodoviário"
+msgstr ""
 
 #. module: l10n_br_fiscal
 #: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_base_wizard_mixin__rps_number
@@ -8248,6 +8346,13 @@ msgid "Send Fiscal Document Email Notification"
 msgstr "Enviar notificação de e-mail de documentos fiscais"
 
 #. module: l10n_br_fiscal
+#: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_document__partner_sendering_id
+#: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_document_mixin__partner_sendering_id
+#: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_document_mixin_fields__partner_sendering_id
+msgid "Sender Address"
+msgstr ""
+
+#. module: l10n_br_fiscal
 #: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_comment__sequence
 #: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_document_serie__internal_sequence_id
 #: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_subsequent_operation__sequence
@@ -8332,6 +8437,13 @@ msgstr "Serviços"
 #: model:ir.ui.menu,name:l10n_br_fiscal.fiscal_config_menu
 msgid "Settings"
 msgstr "Configurações"
+
+#. module: l10n_br_fiscal
+#: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_document__partner_shippering_id
+#: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_document_mixin__partner_shippering_id
+#: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_document_mixin_fields__partner_shippering_id
+msgid "Shipper Address"
+msgstr ""
 
 #. module: l10n_br_fiscal
 #: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_document__partner_shipping_id
@@ -9211,6 +9323,15 @@ msgid "The fiscal operation {} has no return Fiscal Operation defined"
 msgstr "A operação fiscal {} não tem retorno Operação Fiscal definida"
 
 #. module: l10n_br_fiscal
+#: model:ir.model.fields,help:l10n_br_fiscal.field_l10n_br_fiscal_document__partner_shippering_id
+#: model:ir.model.fields,help:l10n_br_fiscal.field_l10n_br_fiscal_document_mixin__partner_shippering_id
+#: model:ir.model.fields,help:l10n_br_fiscal.field_l10n_br_fiscal_document_mixin_fields__partner_shippering_id
+msgid ""
+"The one responsible for delivering the cargo to the carrier when             "
+"the shipment is not carried out by the sender."
+msgstr ""
+
+#. module: l10n_br_fiscal
 #: model:ir.model.fields,help:l10n_br_fiscal.field_l10n_br_fiscal_tax__compute_sequence
 #: model:ir.model.fields,help:l10n_br_fiscal.field_l10n_br_fiscal_tax_group__compute_sequence
 msgid ""
@@ -9281,6 +9402,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_tax_definition__state_to_ids
 msgid "To States"
 msgstr "Situações"
+
+#. module: l10n_br_fiscal
+#: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_document__service_provider
+msgid "Tomador do Serviço"
+msgstr ""
 
 #. module: l10n_br_fiscal
 #: model_terms:ir.ui.view,arch_db:l10n_br_fiscal.document_related_form
