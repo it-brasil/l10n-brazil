@@ -23,6 +23,13 @@ msgid "Accounting"
 msgstr "Contabilidade"
 
 #. module: l10n_br_purchase
+#: model:ir.model.fields,help:l10n_br_purchase.field_purchase_order__partner_receivering_id
+msgid ""
+"Actor who receives the goods. He is considered an intermediary             "
+"between the issuer and the final recipient."
+msgstr ""
+
+#. module: l10n_br_purchase
 #: model:ir.model.fields,field_description:l10n_br_purchase.field_purchase_order_line__additional_data
 msgid "Additional Data"
 msgstr "Dados Adicionais"
@@ -1104,6 +1111,11 @@ msgid "Insurance"
 msgstr "Seguro"
 
 #. module: l10n_br_purchase
+#: model:ir.model.fields,field_description:l10n_br_purchase.field_purchase_order__partner_insurance_id
+msgid "Insurance Partner"
+msgstr ""
+
+#. module: l10n_br_purchase
 #: model:ir.model.fields,field_description:l10n_br_purchase.field_purchase_order__amount_insurance_value
 #: model:ir.model.fields,field_description:l10n_br_purchase.field_purchase_order_line__insurance_value
 #: model:ir.model.fields,field_description:l10n_br_purchase.field_purchase_report__insurance_value
@@ -1443,6 +1455,21 @@ msgid "Razão Social"
 msgstr ""
 
 #. module: l10n_br_purchase
+#: model:ir.model.fields,field_description:l10n_br_purchase.field_purchase_order__partner_receivering_id
+msgid "Receiver Address"
+msgstr ""
+
+#. module: l10n_br_purchase
+#: model:ir.model.fields,help:l10n_br_purchase.field_purchase_order__partner_sendering_id
+msgid "Responsible for sending the goods, usually the issuer of the NFe."
+msgstr ""
+
+#. module: l10n_br_purchase
+#: model:ir.model.fields,field_description:l10n_br_purchase.field_purchase_order__partner_sendering_id
+msgid "Sender Address"
+msgstr ""
+
+#. module: l10n_br_purchase
 #: model:ir.model.fields,field_description:l10n_br_purchase.field_purchase_order__document_serie
 msgid "Serie Number"
 msgstr "Número de Série"
@@ -1455,6 +1482,11 @@ msgstr "Tipo de Serviço LC 166"
 #. module: l10n_br_purchase
 #: model:ir.model.fields.selection,name:l10n_br_purchase.selection__purchase_report__fiscal_type__09
 msgid "Serviços"
+msgstr ""
+
+#. module: l10n_br_purchase
+#: model:ir.model.fields,field_description:l10n_br_purchase.field_purchase_order__partner_shippering_id
+msgid "Shipper Address"
 msgstr ""
 
 #. module: l10n_br_purchase
@@ -1608,6 +1640,13 @@ msgstr "Imposto Retido"
 #: model_terms:ir.ui.view,arch_db:l10n_br_purchase.l10n_br_purchase_order_form
 msgid "Taxes"
 msgstr "Impostos"
+
+#. module: l10n_br_purchase
+#: model:ir.model.fields,help:l10n_br_purchase.field_purchase_order__partner_shippering_id
+msgid ""
+"The one responsible for delivering the cargo to the carrier when             "
+"the shipment is not carried out by the sender."
+msgstr ""
 
 #. module: l10n_br_purchase
 #: model:ir.model.fields,field_description:l10n_br_purchase.field_purchase_report__fiscal_type
