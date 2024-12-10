@@ -25,6 +25,13 @@ msgid "Accounting"
 msgstr ""
 
 #. module: l10n_br_stock_account
+#: model:ir.model.fields,help:l10n_br_stock_account.field_stock_picking__partner_receivering_id
+msgid ""
+"Actor who receives the goods. He is considered an intermediary             "
+"between the issuer and the final recipient."
+msgstr ""
+
+#. module: l10n_br_stock_account
 #: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_move__additional_data
 msgid "Additional Data"
 msgstr ""
@@ -1111,6 +1118,11 @@ msgid ""
 msgstr ""
 
 #. module: l10n_br_stock_account
+#: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_picking__partner_insurance_id
+msgid "Insurance Partner"
+msgstr ""
+
+#. module: l10n_br_stock_account
 #: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_move__insurance_value
 #: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_picking__amount_insurance_value
 msgid "Insurance Value"
@@ -1410,8 +1422,23 @@ msgid "Public Entity"
 msgstr ""
 
 #. module: l10n_br_stock_account
+#: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_picking__partner_receivering_id
+msgid "Receiver Address"
+msgstr ""
+
+#. module: l10n_br_stock_account
+#: model:ir.model.fields,help:l10n_br_stock_account.field_stock_picking__partner_sendering_id
+msgid "Responsible for sending the goods, usually the issuer of the NFe."
+msgstr ""
+
+#. module: l10n_br_stock_account
 #: model:ir.model,name:l10n_br_stock_account.model_stock_return_picking
 msgid "Return Picking"
+msgstr ""
+
+#. module: l10n_br_stock_account
+#: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_picking__partner_sendering_id
+msgid "Sender Address"
 msgstr ""
 
 #. module: l10n_br_stock_account
@@ -1422,6 +1449,11 @@ msgstr ""
 #. module: l10n_br_stock_account
 #: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_move__service_type_id
 msgid "Service Type LC 166"
+msgstr ""
+
+#. module: l10n_br_stock_account
+#: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_picking__partner_shippering_id
+msgid "Shipper Address"
 msgstr ""
 
 #. module: l10n_br_stock_account
@@ -1608,6 +1640,13 @@ msgid ""
 "Technical field used to record the product cost set by the user during a "
 "picking confirmation (when costing method used is 'average price' or "
 "'real'). Value given in company currency and in product uom."
+msgstr ""
+
+#. module: l10n_br_stock_account
+#: model:ir.model.fields,help:l10n_br_stock_account.field_stock_picking__partner_shippering_id
+msgid ""
+"The one responsible for delivering the cargo to the carrier when"
+"             the shipment is not carried out by the sender."
 msgstr ""
 
 #. module: l10n_br_stock_account
