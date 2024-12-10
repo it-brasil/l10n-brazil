@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: L10n-brazil 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-12-04 16:06+0000\n"
+"PO-Revision-Date: 2024-12-10 19:06+0000\n"
 "Last-Translator: Marcel Savegnago <marcel.savegnago@gmail.com>\n"
 "Language-Team: none\n"
 "Language: pt_BR\n"
@@ -864,6 +864,8 @@ msgid ""
 "Actor who receives the goods. He is considered an intermediary             "
 "between the issuer and the final recipient."
 msgstr ""
+"Ator que recebe a mercadoria. Ele é considerado um intermediário             "
+"entre o emissor e o destinatário final."
 
 #. module: l10n_br_fiscal
 #: model_terms:ir.actions.act_window,help:l10n_br_fiscal.cest_action
@@ -888,7 +890,7 @@ msgstr "Adicionar um novo CST"
 #. module: l10n_br_fiscal
 #: model_terms:ir.actions.act_window,help:l10n_br_fiscal.cte_document_action
 msgid "Add a new CTe"
-msgstr ""
+msgstr "Adicionar um novo CTe"
 
 #. module: l10n_br_fiscal
 #: model_terms:ir.actions.act_window,help:l10n_br_fiscal.document_type_action
@@ -1096,7 +1098,7 @@ msgstr ""
 #. module: l10n_br_fiscal
 #: model:ir.ui.menu,name:l10n_br_fiscal.document_all_menu
 msgid "All low level Documents"
-msgstr ""
+msgstr "Todos os documentos de baixo nível"
 
 #. module: l10n_br_fiscal
 #: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_document_line__allow_csll_irpj
@@ -1252,12 +1254,12 @@ msgstr "Receita Anual"
 #: model:ir.model.fields,field_description:l10n_br_fiscal.field_res_partner__is_anonymous_consumer
 #: model:ir.model.fields,field_description:l10n_br_fiscal.field_res_users__is_anonymous_consumer
 msgid "Anonymous Consumer"
-msgstr ""
+msgstr "Consumidor Anônimo"
 
 #. module: l10n_br_fiscal
 #: model:ir.model.fields,field_description:l10n_br_fiscal.field_res_company__anonymous_partner_id
 msgid "Anonymous Partner"
-msgstr ""
+msgstr "Parceiro Anônimo"
 
 #. module: l10n_br_fiscal
 #: model_terms:ir.ui.view,arch_db:l10n_br_fiscal.operation_form
@@ -1395,12 +1397,12 @@ msgstr "Bebidas alcoólicas, exceto cerveja e chope"
 #. module: l10n_br_fiscal
 #: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_tax_definition__benefit_type
 msgid "Benefit Type"
-msgstr ""
+msgstr "Tipo de Benefício"
 
 #. module: l10n_br_fiscal
 #: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_tax_definition__is_benefit
 msgid "Benefit?"
-msgstr ""
+msgstr "Benefício?"
 
 #. module: l10n_br_fiscal
 #: code:addons/l10n_br_fiscal/models/operation_dashboard.py:0
@@ -2954,7 +2956,7 @@ msgstr "Documento subsequente"
 #. module: l10n_br_fiscal
 #: model:ir.model,name:l10n_br_fiscal.model_l10n_br_fiscal_document_supplement
 msgid "Document Supplement Data"
-msgstr ""
+msgstr "Dados do Documento Suplementar"
 
 #. module: l10n_br_fiscal
 #: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_base_wizard_mixin__document_type_id
@@ -9486,7 +9488,7 @@ msgstr "UOM"
 #: code:addons/l10n_br_fiscal/models/document.py:0
 #, python-format
 msgid "Unidentified Consumer"
-msgstr ""
+msgstr "Consumidor Não Identificado"
 
 #. module: l10n_br_fiscal
 #: model:ir.ui.menu,name:l10n_br_fiscal.uom_menu
@@ -9690,7 +9692,7 @@ msgstr "Voltar p/ Em Digitação"
 #. module: l10n_br_fiscal
 #: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_tax_group__partner_id
 msgid "WH Partner"
-msgstr ""
+msgstr "Parceiro da Retenção"
 
 #. module: l10n_br_fiscal
 #: code:addons/l10n_br_fiscal/models/operation_line.py:0
@@ -9732,7 +9734,7 @@ msgstr "Retenção"
 #. module: l10n_br_fiscal
 #: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_document__xml_error_message
 msgid "XML validation errors"
-msgstr ""
+msgstr "Erros de validação XML"
 
 #. module: l10n_br_fiscal
 #: code:addons/l10n_br_fiscal/models/invalidate_number.py:0
