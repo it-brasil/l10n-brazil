@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-05 07:08+0000\n"
-"PO-Revision-Date: 2024-12-04 16:06+0000\n"
+"PO-Revision-Date: 2024-12-10 19:06+0000\n"
 "Last-Translator: Marcel Savegnago <marcel.savegnago@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -30,6 +30,8 @@ msgid ""
 "Actor who receives the goods. He is considered an intermediary             "
 "between the issuer and the final recipient."
 msgstr ""
+"Ator que recebe a mercadoria. Ele é considerado um intermediário             "
+"entre o emissor e o destinatário final."
 
 #. module: l10n_br_stock_account
 #: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_move__additional_data
