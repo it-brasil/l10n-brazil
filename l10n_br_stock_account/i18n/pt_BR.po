@@ -542,7 +542,7 @@ msgstr "Dados adicionais fiscais inseridos manualmente pelo usuário"
 
 #. module: l10n_br_stock_account
 #: model_terms:ir.ui.view,arch_db:l10n_br_stock_account.stock_picking_form
-msgid "Fiscal Document Info"
+msgid "Fiscal Document"
 msgstr ""
 
 #. module: l10n_br_stock_account
@@ -1248,6 +1248,11 @@ msgid "Not Applicable"
 msgstr "Não Aplicável"
 
 #. module: l10n_br_stock_account
+#: model_terms:ir.ui.view,arch_db:l10n_br_stock_account.stock_picking_form
+msgid "Number"
+msgstr ""
+
+#. module: l10n_br_stock_account
 #: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_move__fiscal_operation_id
 #: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_picking__fiscal_operation_id
 msgid "Operation"
@@ -1460,6 +1465,11 @@ msgstr "Separação de Retorno"
 #. module: l10n_br_stock_account
 #: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_picking__partner_sendering_id
 msgid "Sender Address"
+msgstr ""
+
+#. module: l10n_br_stock_account
+#: model_terms:ir.ui.view,arch_db:l10n_br_stock_account.stock_picking_form
+msgid "Serie"
 msgstr ""
 
 #. module: l10n_br_stock_account
@@ -1726,6 +1736,7 @@ msgstr "Transferir"
 
 #. module: l10n_br_stock_account
 #: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_move__fiscal_operation_type
+#: model_terms:ir.ui.view,arch_db:l10n_br_stock_account.stock_picking_form
 msgid "Type"
 msgstr "Tipo"
 
