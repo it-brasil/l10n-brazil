@@ -55,7 +55,7 @@ msgstr ""
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
-msgid "(=) Valor do ISS: R$"
+msgid "(=) Valor do ISS R$"
 msgstr ""
 
 #. module: l10n_br_nfse
@@ -95,14 +95,17 @@ msgstr ""
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
-msgid "1 - Tributação no <br>município</br>"
+msgid ""
+"1 - Tributação no\n"
+"                    <br>município</br>"
 msgstr ""
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
 msgid ""
-"1- Uma via desta Nota Fiscal será enviada através do e-mail fornecido pelo Tomador dos Serviços.<br/>\n"
-"                    2- A autenticidade desta Nota Fiscal poderá ser verificada no site,"
+"1- Uma via desta Nota Fiscal será enviada através do e-mail fornecido pelo Tomador dos Serviços.\n"
+"                    <br/>\n"
+"                        2- A autenticidade desta Nota Fiscal poderá ser verificada no site,"
 msgstr ""
 
 #. module: l10n_br_nfse
@@ -119,21 +122,29 @@ msgstr ""
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
+msgid "<b>Avisos</b>"
+msgstr ""
+
+#. module: l10n_br_nfse
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
+msgid "<b>Dados Adicionais</b>"
+msgstr ""
+
+#. module: l10n_br_nfse
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
 msgid ""
 "<br/>\n"
-"                    Secretaria Municipal da Fazenda\n"
+"                        Secretaria Municipal da Fazenda\n"
+"\n"
 "                    <br/>\n"
-"                    NOTA FISCAL ELETRÔNICA DE SERVIÇO"
+"                        NOTA FISCAL ELETRÔNICA DE SERVIÇO"
 msgstr ""
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
-msgid "<span>Número da NFS-e</span><br/>"
-msgstr ""
-
-#. module: l10n_br_nfse
-#: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
-msgid "Avisos"
+msgid ""
+"<span>Número da NFS-e</span>\n"
+"                        <br/>"
 msgstr ""
 
 #. module: l10n_br_nfse
@@ -188,7 +199,7 @@ msgstr ""
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
-msgid "Complemento:"
+msgid "Complemento"
 msgstr ""
 
 #. module: l10n_br_nfse
@@ -223,11 +234,6 @@ msgstr ""
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
-msgid "Dados Adicionais"
-msgstr ""
-
-#. module: l10n_br_nfse
-#: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
 msgid "Dados do Prestador de Serviços"
 msgstr ""
 
@@ -238,7 +244,7 @@ msgstr ""
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
-msgid "Data e Hora da Emissão"
+msgid "Data"
 msgstr ""
 
 #. module: l10n_br_nfse
@@ -257,12 +263,17 @@ msgstr ""
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
-msgid "E-mail:"
+msgid "E-mail"
 msgstr ""
 
 #. module: l10n_br_nfse
 #: model:ir.model.fields,field_description:l10n_br_nfse.field_l10n_br_fiscal_document__edoc_error_message
 msgid "Edoc Error Message"
+msgstr ""
+
+#. module: l10n_br_nfse
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
+msgid "Emissão"
 msgstr ""
 
 #. module: l10n_br_nfse
@@ -334,7 +345,12 @@ msgstr ""
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
-msgid "ISS a reter:"
+msgid "ISS a reter"
+msgstr ""
+
+#. module: l10n_br_nfse
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
+msgid "Identificação e assinatura (eletrônica ou física) do recebedor:"
 msgstr ""
 
 #. module: l10n_br_nfse
@@ -397,6 +413,11 @@ msgid "NFS-e"
 msgstr ""
 
 #. module: l10n_br_nfse
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
+msgid "NFS-e substituída"
+msgstr ""
+
+#. module: l10n_br_nfse
 #: model:ir.model.fields,field_description:l10n_br_nfse.field_res_company__nfse_city_logo
 msgid "NFSe City Logo"
 msgstr ""
@@ -429,11 +450,6 @@ msgstr ""
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
-msgid "No. da NFS-e substituída"
-msgstr ""
-
-#. module: l10n_br_nfse
-#: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
 msgid "Nome Fantasia"
 msgstr ""
 
@@ -444,7 +460,7 @@ msgstr ""
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
-msgid "Número do RPS"
+msgid "Número RPS"
 msgstr ""
 
 #. module: l10n_br_nfse
@@ -500,7 +516,12 @@ msgstr ""
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
-msgid "Razão Social/Nome"
+msgid "Razão Social"
+msgstr ""
+
+#. module: l10n_br_nfse
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
+msgid "Recebemos os serviços constantes na NFS-e de número 139, emitida por"
 msgstr ""
 
 #. module: l10n_br_nfse
@@ -525,7 +546,7 @@ msgstr ""
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
-msgid "Telefone:"
+msgid "Telefone"
 msgstr ""
 
 #. module: l10n_br_nfse
@@ -560,5 +581,7 @@ msgstr ""
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
-msgid "com a utilização do Código de Verificação.<br/>"
+msgid ""
+"com a utilização do Código de Verificação.\n"
+"                    <br/>"
 msgstr ""
