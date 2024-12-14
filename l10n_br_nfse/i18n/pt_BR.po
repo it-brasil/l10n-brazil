@@ -58,8 +58,8 @@ msgstr "(=) Valor Líquido R$"
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
-msgid "(=) Valor do ISS: R$"
-msgstr "(=) Valor do ISS: R$"
+msgid "(=) Valor do ISS R$"
+msgstr ""
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
@@ -98,21 +98,20 @@ msgstr "1 - Sim"
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
-msgid "1 - Tributação no <br>município</br>"
+msgid ""
+"1 - Tributação no\n"
+"                    <br>município</br>"
 msgstr ""
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
 msgid ""
 "1- Uma via desta Nota Fiscal será enviada através do e-mail fornecido pelo "
-"Tomador dos Serviços.<br/>\n"
-"                    2- A autenticidade desta Nota Fiscal poderá ser "
+"Tomador dos Serviços.\n"
+"                    <br/>\n"
+"                        2- A autenticidade desta Nota Fiscal poderá ser "
 "verificada no site,"
 msgstr ""
-"1- Uma via desta Nota Fiscal será enviada através do e-mail fornecido pelo "
-"Tomador dos Serviços.<br/>\n"
-"                    2- A autenticidade desta Nota Fiscal poderá ser "
-"verificada no site,"
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
@@ -130,22 +129,30 @@ msgstr ""
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
-msgid ""
-"<br/>\n"
-"                    Secretaria Municipal da Fazenda\n"
-"                    <br/>\n"
-"                    NOTA FISCAL ELETRÔNICA DE SERVIÇO"
+msgid "<b>Avisos</b>"
 msgstr ""
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
-msgid "<span>Número da NFS-e</span><br/>"
-msgstr "<span>Número da NFS-e</span><br/>"
+msgid "<b>Dados Adicionais</b>"
+msgstr ""
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
-msgid "Avisos"
-msgstr "Avisos"
+msgid ""
+"<br/>\n"
+"                        Secretaria Municipal da Fazenda\n"
+"\n"
+"                    <br/>\n"
+"                        NOTA FISCAL ELETRÔNICA DE SERVIÇO"
+msgstr ""
+
+#. module: l10n_br_nfse
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
+msgid ""
+"<span>Número da NFS-e</span>\n"
+"                        <br/>"
+msgstr ""
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
@@ -199,8 +206,8 @@ msgstr "Competência"
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
-msgid "Complemento:"
-msgstr "Complemento:"
+msgid "Complemento"
+msgstr ""
 
 #. module: l10n_br_nfse
 #: model:ir.model,name:l10n_br_nfse.model_res_partner
@@ -234,11 +241,6 @@ msgstr "Código do Serviço / Atividade"
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
-msgid "Dados Adicionais"
-msgstr ""
-
-#. module: l10n_br_nfse
-#: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
 msgid "Dados do Prestador de Serviços"
 msgstr "Dados do Prestador de Serviços"
 
@@ -249,8 +251,8 @@ msgstr "Dados do Tomador de Serviços"
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
-msgid "Data e Hora da Emissão"
-msgstr "Data e Hora da Emissão"
+msgid "Data"
+msgstr ""
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
@@ -268,13 +270,18 @@ msgstr "Nome Exibido"
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
-msgid "E-mail:"
-msgstr "E-mail:"
+msgid "E-mail"
+msgstr ""
 
 #. module: l10n_br_nfse
 #: model:ir.model.fields,field_description:l10n_br_nfse.field_l10n_br_fiscal_document__edoc_error_message
 msgid "Edoc Error Message"
 msgstr "Mensagem Erro do Edoc"
+
+#. module: l10n_br_nfse
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
+msgid "Emissão"
+msgstr ""
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
@@ -345,8 +352,13 @@ msgstr "IR"
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
-msgid "ISS a reter:"
-msgstr "ISS a reter:"
+msgid "ISS a reter"
+msgstr ""
+
+#. module: l10n_br_nfse
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
+msgid "Identificação e assinatura (eletrônica ou física) do recebedor:"
+msgstr ""
 
 #. module: l10n_br_nfse
 #: model:ir.model.fields.selection,name:l10n_br_nfse.selection__l10n_br_fiscal_document__operation_nature__4
@@ -408,6 +420,11 @@ msgid "NFS-e"
 msgstr "NFS-e"
 
 #. module: l10n_br_nfse
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
+msgid "NFS-e substituída"
+msgstr ""
+
+#. module: l10n_br_nfse
 #: model:ir.model.fields,field_description:l10n_br_nfse.field_res_company__nfse_city_logo
 msgid "NFSe City Logo"
 msgstr "Logo da Cidade NFSe"
@@ -440,11 +457,6 @@ msgstr "Natureza Operação"
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
-msgid "No. da NFS-e substituída"
-msgstr "No. da NFS-e substituída"
-
-#. module: l10n_br_nfse
-#: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
 msgid "Nome Fantasia"
 msgstr "Nome Fantasia"
 
@@ -455,8 +467,8 @@ msgstr "Nota de Serviço"
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
-msgid "Número do RPS"
-msgstr "Número do RPS"
+msgid "Número RPS"
+msgstr ""
 
 #. module: l10n_br_nfse
 #: model:ir.model.fields,field_description:l10n_br_nfse.field_l10n_br_fiscal_document__operation_nature
@@ -511,8 +523,13 @@ msgstr "Tipo do RPS"
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
-msgid "Razão Social/Nome"
-msgstr "Razão Social/Nome"
+msgid "Razão Social"
+msgstr ""
+
+#. module: l10n_br_nfse
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
+msgid "Recebemos os serviços constantes na NFS-e de número 139, emitida por"
+msgstr ""
 
 #. module: l10n_br_nfse
 #: model:ir.model.fields.selection,name:l10n_br_nfse.selection__l10n_br_fiscal_document__rps_type__1
@@ -536,8 +553,8 @@ msgstr "Regime Especial Tributação"
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
-msgid "Telefone:"
-msgstr "Telefone:"
+msgid "Telefone"
+msgstr ""
 
 #. module: l10n_br_nfse
 #: model:ir.model.fields.selection,name:l10n_br_nfse.selection__l10n_br_fiscal_document__operation_nature__2
@@ -571,8 +588,57 @@ msgstr "Código de Verificação"
 
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
-msgid "com a utilização do Código de Verificação.<br/>"
-msgstr "com a utilização do Código de Verificação.<br/>"
+msgid ""
+"com a utilização do Código de Verificação.\n"
+"                    <br/>"
+msgstr ""
+
+#~ msgid "(=) Valor do ISS: R$"
+#~ msgstr "(=) Valor do ISS: R$"
+
+#~ msgid ""
+#~ "1- Uma via desta Nota Fiscal será enviada através do e-mail fornecido "
+#~ "pelo Tomador dos Serviços.<br/>\n"
+#~ "                    2- A autenticidade desta Nota Fiscal poderá ser "
+#~ "verificada no site,"
+#~ msgstr ""
+#~ "1- Uma via desta Nota Fiscal será enviada através do e-mail fornecido "
+#~ "pelo Tomador dos Serviços.<br/>\n"
+#~ "                    2- A autenticidade desta Nota Fiscal poderá ser "
+#~ "verificada no site,"
+
+#~ msgid "<span>Número da NFS-e</span><br/>"
+#~ msgstr "<span>Número da NFS-e</span><br/>"
+
+#~ msgid "Avisos"
+#~ msgstr "Avisos"
+
+#~ msgid "Complemento:"
+#~ msgstr "Complemento:"
+
+#~ msgid "Data e Hora da Emissão"
+#~ msgstr "Data e Hora da Emissão"
+
+#~ msgid "E-mail:"
+#~ msgstr "E-mail:"
+
+#~ msgid "ISS a reter:"
+#~ msgstr "ISS a reter:"
+
+#~ msgid "No. da NFS-e substituída"
+#~ msgstr "No. da NFS-e substituída"
+
+#~ msgid "Número do RPS"
+#~ msgstr "Número do RPS"
+
+#~ msgid "Razão Social/Nome"
+#~ msgstr "Razão Social/Nome"
+
+#~ msgid "Telefone:"
+#~ msgstr "Telefone:"
+
+#~ msgid "com a utilização do Código de Verificação.<br/>"
+#~ msgstr "com a utilização do Código de Verificação.<br/>"
 
 #~ msgid "CNAE Code"
 #~ msgstr "Código CNAE"
