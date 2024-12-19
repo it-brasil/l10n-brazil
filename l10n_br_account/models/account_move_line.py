@@ -245,6 +245,11 @@ class AccountMoveLine(models.Model):
             sorted_result |= result[idx]
         return sorted_result
 
+    def write(self, values):
+        self._inject_shadowed_fields([values])
+        result = super().write(values)
+        return result
+
     def unlink(self):
         unlink_fiscal_lines = self.env["l10n_br_fiscal.document.line"]
         for inv_line in self:
@@ -521,7 +526,12 @@ class AccountMoveLine(models.Model):
             # override the default product uom (set by the onchange):
             self.product_uom_id = self.fiscal_document_line_id.uom_id.id
 
-    @api.onchange("fiscal_tax_ids")
+    @api.onchange(
+        "fiscal_tax_ids", 
+        "fiscal_operation_id", 
+        "product_id", 
+        "product_uom_id"
+    )
     def _onchange_fiscal_tax_ids(self):
         """Ao alterar o campo fiscal_tax_ids que contém os impostos fiscais,
         são atualizados os impostos contábeis relacionados"""
