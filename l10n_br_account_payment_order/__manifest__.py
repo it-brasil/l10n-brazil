@@ -4,7 +4,7 @@
 
 {
     "name": "Brazilian Payment Order",
-    "version": "16.0.2.0.0",
+    "version": "16.0.5.0.0",
     "license": "AGPL-3",
     "author": "KMEE, Akretion, Odoo Community Association (OCA)",
     "maintainers": ["mbcosta"],
@@ -37,6 +37,13 @@
         # Boleto Wallet Code
         "data/cnab_codes/banco_santander_boleto_wallet_code.xml",
         "data/cnab_codes/banco_bradesco_boleto_wallet_code.xml",
+        # CNAB Discount Codes
+        "data/cnab_codes/banco_ailos_240_boleto_discount_code.xml",
+        "data/cnab_codes/banco_bradesco_240_boleto_discount_code.xml",
+        "data/cnab_codes/banco_cef_240_boleto_discount_code.xml",
+        "data/cnab_codes/banco_santander_240_boleto_discount_code.xml",
+        "data/cnab_codes/banco_sicredi_240_boleto_discount_code.xml",
+        "data/cnab_codes/banco_unicred_240_400_boleto_discount_code.xml",
         # Wizards
         "wizards/account_payment_line_create_view.xml",
         "wizards/account_move_line_change.xml",
@@ -51,6 +58,7 @@
         "views/account_move_view.xml",
         # Códigos CNAB
         "views/l10n_br_cnab_code_view.xml",
+        "views/l10n_br_cnab_config_view.xml",
     ],
     "demo": [
         "demo/account_payment_method.xml",
@@ -59,6 +67,7 @@
         "demo/account_account.xml",
         "demo/account_journal.xml",
         "demo/ir_sequence.xml",
+        "demo/l10n_br_cnab_config_demo.xml",
         "demo/account_payment_mode.xml",
         "demo/account_invoice.xml",
         "demo/res_users.xml",
