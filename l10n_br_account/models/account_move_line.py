@@ -24,6 +24,9 @@ SHADOWED_FIELDS = [
     "price_unit",
 ]
 
+ACCOUNTING_FIELDS = ("debit", "credit", "amount_currency")
+BUSINESS_FIELDS = ("price_unit", "quantity", "discount", "tax_ids")
+
 
 class AccountMoveLine(models.Model):
     _name = "account.move.line"
@@ -244,6 +247,55 @@ class AccountMoveLine(models.Model):
         for idx in inverted_index:
             sorted_result |= result[idx]
         return sorted_result
+
+    def write(self, values):
+        if values.get("product_uom_id"):
+            values["uom_id"] = values["product_uom_id"]
+        non_dummy = self.filtered(lambda line: line.fiscal_document_line_id)
+        self._inject_shadowed_fields([values])
+        if values.get("move_id") and len(non_dummy) == len(self):
+            # we can write the document_id in all lines
+            values["document_id"] = (
+                self.env["account.move"].browse(values["move_id"]).fiscal_document_id.id
+            )
+            result = super().write(values)
+        elif values.get("move_id"):
+            # we will only define document_id for non dummy lines
+            result = super().write(values)
+            doc_id = (
+                self.env["account.move"].browse(values["move_id"]).fiscal_document_id.id
+            )
+            super(AccountMoveLine, non_dummy).write({"document_id": doc_id})
+        else:
+            result = super().write(values)
+
+        for line in self:
+            cleaned_vals = line.move_id._cleanup_write_orm_values(line, values)
+            if not cleaned_vals:
+                continue
+
+            if not line.move_id.is_invoice(include_receipts=True):
+                continue
+
+            if any(
+                field in cleaned_vals
+                for field in [*ACCOUNTING_FIELDS, *BUSINESS_FIELDS]
+            ):
+                to_write = line._get_amount_credit_debit_model(
+                    line.move_id,
+                    exclude_from_invoice_tab=line.exclude_from_invoice_tab,
+                    amount_tax_included=line.amount_tax_included,
+                    amount_tax_not_included=line.amount_tax_not_included,
+                    amount_tax_withholding=line.amount_tax_withholding,
+                    amount_total=line.amount_total,
+                    currency_id=line.currency_id,
+                    company_id=line.company_id,
+                    date=line.date,
+                    cfop_id=line.cfop_id,
+                )
+                result |= super(AccountMoveLine, line).write(to_write)
+
+        return result
 
     def unlink(self):
         unlink_fiscal_lines = self.env["l10n_br_fiscal.document.line"]
