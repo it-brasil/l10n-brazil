@@ -598,7 +598,13 @@ class AccountMoveLine(models.Model):
             # override the default product uom (set by the onchange):
             self.product_uom_id = self.fiscal_document_line_id.uom_id.id
 
-    @api.depends("product_id", "product_uom_id", "fiscal_tax_ids")
+    @api.onchange(
+        "fiscal_tax_ids", 
+        "fiscal_operation_id", 
+        "product_id", 
+        "price_unit", 
+        "product_uom_id"
+    )
     def _compute_tax_ids(self):
         # Adding 'fiscal_tax_ids' as a dependency to ensure that the taxes
         # are recalculated when this field changes.
