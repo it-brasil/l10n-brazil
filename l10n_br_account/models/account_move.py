@@ -318,6 +318,7 @@ class AccountMove(models.Model):
         "currency_id",
         "amount_total_in_currency_signed",
         "invoice_date_due",
+        "invoice_line_ids"
     )
     def _compute_needed_terms(self):
         """
